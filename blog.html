@@ -1,255 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>당산 코인노래방 가이드 – 블로그</title>
-    <meta name="description" content="진짜 하드코어한 당산 코인노래방 후기. 가격 미친 곳, 음질 개쩌는 곳, 24시간 가능한 곳 싹 다 까발린다. 돈 아끼고 싶으면 봐라.">
-    <meta name="keywords" content="당산코인노래방, 당산노래방, 코인노래방추천, 당산가성비노래방, 코인노래방가격, 당산밤샘노래방">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://dangsan-room-song.mapo-room-guide.xyz/blog.html">
-    <meta property="og:title" content="당산 코인노래방 가이드 – 블로그">
-    <meta property="og:description" content="진짜 하드코어한 당산 코인노래방 후기. 가격 미친 곳, 음질 개쩌는 곳, 24시간 가능한 곳 싹 다 까발린다. 돈 아끼고 싶으면 봐라.">
-    <style>
-        :root {
-            --bg: #1a1a1a;
-            --fg: #f0f0f0;
-            --accent: #ff3333;
-            --alt: #2b2b2b;
-            --border: 3px solid #ff3333;
-            --font-base: 'Courier New', Courier, monospace;
-            --font-head: 'Impact', 'Arial Black', sans-serif;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: var(--bg);
-            color: var(--fg);
-            font-family: var(--font-base);
-            line-height: 1.5;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        /* hamburger-menu 패턴 */
-        .hamburger-menu {
-            position: relative;
-        }
-        .hamburger-menu input[type="checkbox"] {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 40px;
-            height: 40px;
-            opacity: 0;
-            cursor: pointer;
-            z-index: 3;
-        }
-        .hamburger-menu .ham-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 40px;
-            height: 40px;
-            background: var(--accent);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            z-index: 2;
-            pointer-events: none;
-        }
-        .hamburger-menu .ham-icon span {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background: #fff;
-            transition: all 0.3s;
-        }
-        .hamburger-menu input:checked ~ .ham-icon span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        .hamburger-menu input:checked ~ .ham-icon span:nth-child(2) {
-            opacity: 0;
-        }
-        .hamburger-menu input:checked ~ .ham-icon span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-        .hamburger-menu nav {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: var(--alt);
-            border: var(--border);
-            padding: 2rem 1rem 1rem;
-            display: none;
-            z-index: 1;
-            min-width: 200px;
-        }
-        .hamburger-menu input:checked ~ nav {
-            display: block;
-        }
-        .hamburger-menu nav a {
-            display: block;
-            color: var(--accent);
-            text-decoration: none;
-            font-family: var(--font-head);
-            font-size: 1.2rem;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #444;
-        }
-        .hamburger-menu nav a:hover {
-            text-decoration: underline;
-        }
-        header {
-            border-bottom: var(--border);
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        header h1 {
-            font-family: var(--font-head);
-            font-size: 2.5rem;
-            letter-spacing: -0.05em;
-            text-transform: uppercase;
-            color: var(--accent);
-        }
-        .post {
-            background: var(--alt);
-            border: var(--border);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .post h2 {
-            font-family: var(--font-head);
-            font-size: 1.8rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-        .post p {
-            margin-bottom: 1rem;
-        }
-        .post strong {
-            color: var(--accent);
-        }
-        .post ul {
-            list-style: square;
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .post ul li {
-            margin-bottom: 0.5rem;
-        }
-        .post .cta {
-            background: var(--accent);
-            color: #fff;
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            font-family: var(--font-head);
-            text-transform: uppercase;
-            text-decoration: none;
-            margin-top: 1rem;
-        }
-        .post .cta:hover {
-            background: #cc0000;
-        }
-        .faq {
-            border-top: var(--border);
-            padding-top: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        .faq h3 {
-            font-family: var(--font-head);
-            font-size: 1.4rem;
-            color: var(--accent);
-            margin-bottom: 0.8rem;
-        }
-        .faq dt {
-            font-weight: bold;
-            color: var(--accent);
-            margin-top: 1rem;
-        }
-        .faq dd {
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            border-top: var(--border);
-            margin-top: 2rem;
-            font-size: 0.8rem;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>당산 코인노래방 가이드 – 블로그</title>
+ <meta name="description" content="진짜 하드코어한 당산 코인노래방 후기. 가격 미친 곳, 음질 개쩌는 곳, 24시간 가능한 곳 싹 다 까발린다. 돈 아끼고 싶으면 봐라.">
+ <meta name="keywords" content="당산코인노래방, 당산노래방, 코인노래방추천, 당산가성비노래방, 코인노래방가격, 당산밤샘노래방">
+ <link rel="canonical" href="https://dangsan-room-song.mapo-room-guide.xyz/blog.html">
+ <meta property="og:title" content="당산 코인노래방 가이드 – 블로그">
+ <meta property="og:description" content="진짜 하드코어한 당산 코인노래방 후기. 가격 미친 곳, 음질 개쩌는 곳, 24시간 가능한 곳 싹 다 까발린다. 돈 아끼고 싶으면 봐라.">
+ <style>
+ :root {
+ --bg: #1a1a1a;
+ --fg: #f0f0f0;
+ --accent: #ff3333;
+ --alt: #2b2b2b;
+ --border: 3px solid #ff3333;
+ --font-base: 'Courier New', Courier, monospace;
+ --font-head: 'Impact', 'Arial Black', sans-serif;
+ }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ background: var(--bg);
+ color: var(--fg);
+ font-family: var(--font-base);
+ line-height: 1.5;
+ padding: 1rem;
+ }
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ /* hamburger-menu 패턴 */
+ .hamburger-menu {
+ position: relative;
+ }
+ .hamburger-menu input[type="checkbox"] {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 40px;
+ height: 40px;
+ opacity: 0;
+ cursor: pointer;
+ z-index: 3;
+ }
+ .hamburger-menu .ham-icon {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 40px;
+ height: 40px;
+ background: var(--accent);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+ z-index: 2;
+ pointer-events: none;
+ }
+ .hamburger-menu .ham-icon span {
+ display: block;
+ width: 25px;
+ height: 3px;
+ background: #fff;
+ transition: all 0.3s;
+ }
+ .hamburger-menu input:checked ~ .ham-icon span:nth-child(1) {
+ transform: rotate(45deg) translate(5px, 5px);
+ }
+ .hamburger-menu input:checked ~ .ham-icon span:nth-child(2) {
+ opacity: 0;
+ }
+ .hamburger-menu input:checked ~ .ham-icon span:nth-child(3) {
+ transform: rotate(-45deg) translate(5px, -5px);
+ }
+ .hamburger-menu nav {
+ position: absolute;
+ top: 0;
+ right: 0;
+ background: var(--alt);
+ border: var(--border);
+ padding: 2rem 1rem 1rem;
+ display: none;
+ z-index: 1;
+ min-width: 200px;
+ }
+ .hamburger-menu input:checked ~ nav {
+ display: block;
+ }
+ .hamburger-menu nav a {
+ display: block;
+ color: var(--accent);
+ text-decoration: none;
+ font-family: var(--font-head);
+ font-size: 1.2rem;
+ padding: 0.5rem 0;
+ border-bottom: 1px solid #444;
+ }
+ .hamburger-menu nav a:hover {
+ text-decoration: underline;
+ }
+ header {
+ border-bottom: var(--border);
+ padding-bottom: 0.5rem;
+ margin-bottom: 2rem;
+ }
+ header h1 {
+ font-family: var(--font-head);
+ font-size: 2.5rem;
+ letter-spacing: -0.05em;
+ text-transform: uppercase;
+ color: var(--accent);
+ }
+ .post {
+ background: var(--alt);
+ border: var(--border);
+ padding: 1.5rem;
+ margin-bottom: 2rem;
+ }
+ .post h2 {
+ font-family: var(--font-head);
+ font-size: 1.8rem;
+ color: var(--accent);
+ margin-bottom: 1rem;
+ }
+ .post p {
+ margin-bottom: 1rem;
+ }
+ .post strong {
+ color: var(--accent);
+ }
+ .post ul {
+ list-style: square;
+ padding-left: 1.5rem;
+ margin-bottom: 1rem;
+ }
+ .post ul li {
+ margin-bottom: 0.5rem;
+ }
+ .post .cta {
+ background: var(--accent);
+ color: #fff;
+ display: inline-block;
+ padding: 0.5rem 1.5rem;
+ font-family: var(--font-head);
+ text-transform: uppercase;
+ text-decoration: none;
+ margin-top: 1rem;
+ }
+ .post .cta:hover {
+ background: #cc0000;
+ }
+ .faq {
+ border-top: var(--border);
+ padding-top: 1.5rem;
+ margin-top: 1.5rem;
+ }
+ .faq h3 {
+ font-family: var(--font-head);
+ font-size: 1.4rem;
+ color: var(--accent);
+ margin-bottom: 0.8rem;
+ }
+ .faq dt {
+ font-weight: bold;
+ color: var(--accent);
+ margin-top: 1rem;
+ }
+ .faq dd {
+ margin-left: 1rem;
+ margin-bottom: 1rem;
+ }
+ footer {
+ text-align: center;
+ padding: 1rem 0;
+ border-top: var(--border);
+ margin-top: 2rem;
+ font-size: 0.8rem;
+ }
+ </style>
   <meta property="og:url" content="https://dangsan-room-song.mapo-room-guide.xyz/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <div class="hamburger-menu">
-            <input type="checkbox" id="nav-toggle">
-            <div class="ham-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <a href="#">홈</a>
-                <a href="#">블로그</a>
-                <a href="#">가격</a>
-                <a href="#">문의</a>
-            </nav>
-        </div>
-        <header>
-            <h1>당산 코인노래방 가이드 – 블로그</h1>
-        </header>
-        <main>
-            <article class="post">
-                <h2>당산에서 가장 하드코어한 코인노래방 3곳</h2>
-                <p><strong>야, 돈 아깝게 놀 시간 없다.</strong> 당산에서 진짜 가성비 미친 코인노래방만 골라서 다녀본 결과를 까발린다. 다 필요 없고, <strong>가격, 음질, 24시간</strong> 이 세 가지만 보면 된다. 아래 세 곳은 내가 직접 발로 뛰고 귀가 터져가며 검증했다.</p>
-                
-                <h3>1. 락킹코인 – 가격이 반칙</h3>
-                <p>1곡에 100원? 말도 안 된다. 여기는 200원짜리도 있는데 음질이 개쩐다. JBL 스피커에 우퍼까지. 새벽 2시에 가도 불 다 켜져 있고, 사장님이 가끔 맥주 하나 던져준다. <strong>여기 말고 다른 데 갈 이유가 없다.</strong></p>
-                
-                <h3>2. 코인킹당산 – 24시간 풀코스</h3>
-                <p>밤샘 작업 끝나고 가기 딱 좋다. 24시간 진짜 문 닫는 시간이 없다. 방음도 짱이라 아무리 발라드로 질러도 옆방에 안 들린다. 리모컨으로 EQ 조절되는데 베이스 올리면 가슴이 웅웅 울린다.</p>
-                
-                <h3>3. 노래맛집 – 음질 끝판왕</h3>
-                <p>여기는 마이크가 오디오테크니카다. 일반 코인노래방이랑 급이 다르다. 가격은 500원으로 좀 비싼 편인데, 녹음 기능까지 있으니까 내 목소리 한 번 저장해봐라. 소름 돋는다.</p>
-                
-                <ul>
-                    <li>락킹코인 – 100원/곡, 24시간, JBL</li>
-                    <li>코인킹당산 – 200원/곡, 24시간, 방음 최고</li>
-                    <li>노래맛집 – 500원/곡, 오디오테크니카, 녹음</li>
-                </ul>
-                
-                <p><strong>결론: 가격 원하면 락킹코인, 새벽에 갈 거면 코인킹, 음질에 진심이면 노래맛집.</strong> 더 이상 고민하지 마라. 오늘 당장 가서 질러라.</p>
-                
-                <a href="#" class="cta">지금 전화해서 예약해</a>
-                
-                <div class="faq">
-                    <h3>자주 묻는 개똥질문 (FAQ)</h3>
-                    <dl>
-                        <dt>Q: 음료수 반입 가능해?</dt>
-                        <dd>A: 대부분 가능한데, <strong>락킹코인은 강력하게 금지</strong>다. 들켜서 쫓겨나도 내 책임 아니다.</dd>
-                        <dt>Q: 혼자가도 돼?</dt>
-                        <dd>A: 혼자 오는 놈들 많다. 오히려 더 신나게 부르고 나와라. 아무도 신경 안 쓴다.</dd>
-                        <dt>Q: 주차는 어디에?</dt>
-                        <dd>A: 당산역 근처라 걸어오는 게 정신 건강에 좋다. 차 가져오면 주차비에 노래방비 더 나간다.</dd>
-                    </dl>
-                </div>
-            </article>
-        </main>
-        <footer>
-            <p>© 2025 당산 코인노래방 가이드 – 모든 정보는 내 경험이다. 믿거나 말거나.</p>
-        </footer>
-    </div>
+ <div class="container">
+ <div class="hamburger-menu">
+ <input type="checkbox" id="nav-toggle">
+ <div class="ham-icon">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <nav>
+ <a href="#">홈</a>
+ <a href="#">블로그</a>
+ <a href="#">가격</a>
+ <a href="#">문의</a>
+ </nav>
+ </div>
+ <header>
+ <h1>당산 코인노래방 가이드 – 블로그</h1>
+ </header>
+ <main>
+ <article class="post">
+ <h2>당산에서 가장 하드코어한 코인노래방 3곳</h2>
+ <p><strong>야, 돈 아깝게 놀 시간 없다.</strong> 당산에서 진짜 가성비 미친 코인노래방만 골라서 다녀본 결과를 까발린다. 다 필요 없고, <strong>가격, 음질, 24시간</strong> 이 세 가지만 보면 된다. 아래 세 곳은 내가 직접 발로 뛰고 귀가 터져가며 검증했다.</p>
+ 
+ <h3>1. 락킹코인 – 가격이 반칙</h3>
+ <p>1곡에 100원? 말도 안 된다. 여기는 200원짜리도 있는데 음질이 개쩐다. JBL 스피커에 우퍼까지. 새벽 2시에 가도 불 다 켜져 있고, 사장님이 가끔 맥주 하나 던져준다. <strong>여기 말고 다른 데 갈 이유가 없다.</strong></p>
+ 
+ <h3>2. 코인킹당산 – 24시간 풀코스</h3>
+ <p>밤샘 작업 끝나고 가기 딱 좋다. 24시간 진짜 문 닫는 시간이 없다. 방음도 짱이라 아무리 발라드로 질러도 옆방에 안 들린다. 리모컨으로 EQ 조절되는데 베이스 올리면 가슴이 웅웅 울린다.</p>
+ 
+ <h3>3. 노래맛집 – 음질 끝판왕</h3>
+ <p>여기는 마이크가 오디오테크니카다. 일반 코인노래방이랑 급이 다르다. 가격은 500원으로 좀 비싼 편인데, 녹음 기능까지 있으니까 내 목소리 한 번 저장해봐라. 소름 돋는다.</p>
+ 
+ <ul>
+ <li>락킹코인 – 100원/곡, 24시간, JBL</li>
+ <li>코인킹당산 – 200원/곡, 24시간, 방음 최고</li>
+ <li>노래맛집 – 500원/곡, 오디오테크니카, 녹음</li>
+ </ul>
+ 
+ <p><strong>결론: 가격 원하면 락킹코인, 새벽에 갈 거면 코인킹, 음질에 진심이면 노래맛집.</strong> 더 이상 고민하지 마라. 오늘 당장 가서 질러라.</p>
+ 
+ <a href="#" class="cta">지금 전화해서 예약해</a>
+ 
+ <div class="faq">
+ <h3>자주 묻는 개똥질문 (FAQ)</h3>
+ <dl>
+ <dt>Q: 음료수 반입 가능해?</dt>
+ <dd>A: 대부분 가능한데, <strong>락킹코인은 강력하게 금지</strong>다. 들켜서 쫓겨나도 내 책임 아니다.</dd>
+ <dt>Q: 혼자가도 돼?</dt>
+ <dd>A: 혼자 오는 놈들 많다. 오히려 더 신나게 부르고 나와라. 아무도 신경 안 쓴다.</dd>
+ <dt>Q: 주차는 어디에?</dt>
+ <dd>A: 당산역 근처라 걸어오는 게 정신 건강에 좋다. 차 가져오면 주차비에 노래방비 더 나간다.</dd>
+ </dl>
+ </div>
+ </article>
+ </main>
+ <footer>
+ <p>© 2025 당산 코인노래방 가이드 – 모든 정보는 내 경험이다. 믿거나 말거나.</p>
+ </footer>
+ </div>
 </body>
 </html>
